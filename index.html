@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia AI Counselor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0908; /* Midnight Espresso */
+            color: #d1ccbc; /* Aged Paper text */
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair+Display', serif;
+        }
+        .bg-midnight { background-color: #0a0908; }
+        .bg-espresso { background-color: #1a1614; }
+        .bg-mahogany { background-color: #2d1e17; }
+        .text-amber { color: #d9a05b; }
+        .bg-amber { background-color: #d9a05b; }
+        .border-amber { border-color: #d9a05b; }
+        
+        .glow-amber {
+            box-shadow: 0 0 15px -3px rgba(217, 160, 91, 0.3);
+        }
+        .glow-text {
+            text-shadow: 0 0 10px rgba(217, 160, 91, 0.2);
+        }
+        
+        /* Custom scrollbar for library vibe */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0908;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2d1e17;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d9a05b;
+        }
+
+        .manuscript-card {
+            background: linear-gradient(145deg, #1a1614 0%, #12100e 100%);
+            border: 1px solid rgba(217, 160, 91, 0.1);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+</head>
+<body class="bg-midnight text-[#d1ccbc] selection:bg-amber/40">
+    <div id="root"></div>
+</body>
+</html>
